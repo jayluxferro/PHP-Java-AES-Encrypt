@@ -29,12 +29,4 @@ public class Security {
 	    }
 	    return new String(output);
 	}
-	
-	//this is just a test run
-	public static void main(String[] args) {
-	  String key = "1234567891234567"; //16 character key
-	  String data = "example";
-	  System.out.println(Security.decrypt(Security.encrypt(data, key), key));
-	  System.out.println(Security.encrypt(data, key));	    
-	}	
 }
